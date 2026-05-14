@@ -583,7 +583,9 @@
     <script>
         // CẤU HÌNH: Dán URL Web App của Google Apps Script vào đây sau khi Deploy thành công
         // const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwjsq-jVCXY9pE3hPJiuQqgCyGZyIWKc2sSArSO0ybKdzZbeJOwmkdN8KlPha6wSwDd/exec';
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzEDUVa_zI-Ttkw2GCwrjby1dl-RICexidbF-R2PyLpJ_1EIvbX1EMlSAHXCSCgm0aw/exec';
+        // const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzEDUVa_zI-Ttkw2GCwrjby1dl-RICexidbF-R2PyLpJ_1EIvbX1EMlSAHXCSCgm0aw/exec';
+        // const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyCb0GLzyq-et_U4H_WA_SnRQZn0b6pXzkVsQOeBplD5WTICgFEXBSteOYq4Th7t79f/exec';
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw3yUm8YQW9fQNkQ_I3vDAe71rEVilt7OjcEUnAswi1h2zxUcXmM_hb2UMZ3i8vKSUk/exec';
 
         async function handleFormSubmit(event) {
             event.preventDefault();
@@ -607,6 +609,14 @@
             try {
                 const formData = new FormData(form);
                 formData.append('url', window.location.href); // Thêm URL trang hiện tại
+
+                // Trích xuất subid từ URL nếu có
+                const urlParams = new URLSearchParams(window.location.search);
+                const subid = urlParams.get('subid');
+                if (subid) {
+                    formData.append('subid', subid);
+                }
+
                 const queryParams = new URLSearchParams(formData).toString();
 
                 // Gửi dữ liệu qua fetch (sử dụng GET/POST tùy cấu hình Apps Script)

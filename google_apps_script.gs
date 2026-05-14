@@ -30,6 +30,7 @@ function handleRequest(e) {
     var zalo = e.parameter.zalo || "";
     var plan = e.parameter.plan || "";
     var url = e.parameter.url || "";
+    var subid = e.parameter.subid || "";
     var date = new Date();
 
     // 1. Xác định dòng mới để ghi dữ liệu (Dùng cách này để đảm bảo cột G luôn khớp)
@@ -37,6 +38,27 @@ function handleRequest(e) {
     
     // 2. Ghi dữ liệu vào 6 cột đầu: Thời gian | Họ và Tên | Số điện thoại | Email | Sản phẩm quan tâm | URL
     dataSheet.getRange(newRow, 1, 1, 6).setValues([[date, name, zalo, email, plan, url]]);
+    SpreadsheetApp.flush(); // Đảm bảo dữ liệu được ghi vào sheet tổng trước khi xử lý tiếp
+
+    // 2b. Nếu có SubID (Cộng tác viên), lưu vào sheet riêng của CTV
+    if (subid) {
+      try {
+        var subSheet = ss.getSheetByName(subid);
+        if (!subSheet) {
+          // Chỉ cố gắng tạo sheet nếu subid hợp lệ (không chứa ký tự đặc biệt gây lỗi)
+          subSheet = ss.insertSheet(subid);
+          // Thêm header cho sheet mới
+          subSheet.appendRow(["Thời gian", "Họ và Tên", "Số điện thoại", "Email", "Kế hoạch", "URL"]);
+          // Định dạng header (in đậm)
+          subSheet.getRange(1, 1, 1, 6).setFontWeight("bold").setBackground("#f3f3f3");
+        }
+        subSheet.appendRow([date, name, zalo, email, plan, url]);
+      } catch (subError) {
+        // Nếu lỗi khi lưu vào sheet CTV (ví dụ: tên sheet không hợp lệ), 
+        // ta bỏ qua để không làm gián đoạn việc lưu vào sheet tổng
+        console.error("Lỗi khi lưu vào sheet CTV: " + subError.toString());
+      }
+    }
 
     var studyCode = "Liên hệ Zalo để nhận mã";
     var codesData = codeSheet.getDataRange().getValues();

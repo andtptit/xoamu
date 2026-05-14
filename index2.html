@@ -164,6 +164,13 @@
                 formData.append('url', window.location.href);
                 formData.append('source', 'topik4u_index2');
                 
+                // Trích xuất subid từ URL nếu có
+                const urlParams = new URLSearchParams(window.location.search);
+                const subid = urlParams.get('subid');
+                if (subid) {
+                    formData.append('subid', subid);
+                }
+
                 const queryParams = new URLSearchParams(formData).toString();
                 
                 await fetch(`${SCRIPT_URL}?${queryParams}`, {
