@@ -36,8 +36,8 @@ function handleRequest(e) {
     // 1. Xác định dòng mới để ghi dữ liệu (Dùng cách này để đảm bảo cột G luôn khớp)
     var newRow = dataSheet.getLastRow() + 1;
     
-    // 2. Ghi dữ liệu vào 6 cột đầu: Thời gian | Họ và Tên | Số điện thoại | Email | Sản phẩm quan tâm | URL
-    dataSheet.getRange(newRow, 1, 1, 6).setValues([[date, name, zalo, email, plan, url]]);
+    // 2. Ghi dữ liệu vào 7 cột đầu: Thời gian | Họ và Tên | Số điện thoại | Email | Sản phẩm quan tâm | URL | SubID
+    dataSheet.getRange(newRow, 1, 1, 7).setValues([[date, name, zalo, email, plan, url, subid]]);
     SpreadsheetApp.flush(); // Đảm bảo dữ liệu được ghi vào sheet tổng trước khi xử lý tiếp
 
     // 2b. Nếu có SubID (Cộng tác viên), lưu vào sheet riêng của CTV
