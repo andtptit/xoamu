@@ -1,0 +1,49 @@
+HƯỚNG DẪN VẬN HÀNH HỆ THỐNG LANDING PAGE & GỬI MÃ TỰ ĐỘNG
+Civilis - Chiến dịch "Xóa mù tiếng Hàn"
+============================================================
+
+Hệ thống bao gồm:
+1. Landing Page: Thu thập thông tin khách hàng.
+2. Google Sheet: Lưu trữ dữ liệu và quản lý mã học tập.
+3. Google Apps Script: "Bộ não" xử lý gửi email và cập nhật trạng thái.
+
+I. CẤU TRÚC GOOGLE SHEET (Dữ liệu nằm ở file Google Sheet quản lý)
+------------------------------------------------------------
+1. Sheet "data": Lưu thông tin khách đăng ký từ web.
+   - Cột A-F: Thông tin khách (Tên, SĐT, Email, Kế hoạch...).
+   - Cột G (note): Trạng thái gửi mail. 
+     + "Đã gửi (Auto)": Hệ thống tự gửi ngay khi khách đăng ký.
+     + "Đã gửi (Manual)": Do admin gửi thủ công bằng nút bấm.
+
+2. Sheet "code": Chứa kho mã học tập.
+   - Cột A: Danh sách mã (Copy từ hệ thống Topik4u vào đây).
+   - Cột B (Status): Sẽ hiện "SENT" nếu mã đã được dùng.
+   - Cột C (Email): Email của khách đã nhận mã này.
+   - Cột D (SentAt): Thời gian gửi mã.
+
+II. HƯỚNG DẪN GỬI MÃ THỦ CÔNG (Cho các trường hợp cần gửi lại hoặc gửi sót)
+------------------------------------------------------------
+1. Mở sheet "data".
+2. Dùng chuột bôi đen các dòng khách hàng muốn gửi email (có thể chọn nhiều dòng cùng lúc).
+3. Trên thanh Menu của Google Sheet, bấm vào: 🚀 Civilis Tools -> Gửi mã cho các dòng đang chọn.
+4. Chờ vài giây, hệ thống sẽ báo số lượng email đã gửi thành công.
+5. Kiểm tra cột G để xác nhận trạng thái "Đã gửi (Manual)".
+
+III. CÁC LƯU Ý QUAN TRỌNG CHO TEAM MARKETING
+------------------------------------------------------------
+1. Quản lý kho mã:
+   - Luôn đảm bảo sheet "code" còn dư mã trống (Cột B trống). 
+   - Nếu hết mã, khách đăng ký sẽ nhận được thông báo "Liên hệ Zalo để nhận mã".
+
+2. Theo dõi cột G (note):
+   - Nếu thấy khách đăng ký mà cột G vẫn trống, nghĩa là có lỗi gửi mail (thường do email khách nhập sai). Team có thể sửa lại email và dùng chức năng gửi thủ công (Mục II).
+
+3. Thời hạn mã:
+   - Theo quy định trên Landing Page và Email, mã có hiệu lực 24H. Team cần nhắc nhở khách kích hoạt sớm để tránh bị thu hồi (theo kịch bản marketing).
+
+4. Hỗ trợ khách hàng:
+   - Link nhóm Zalo giải đáp: https://zalo.me/g/l105v00zva5okswffcoo
+   - Mọi thắc mắc kỹ thuật về website, liên hệ bộ phận kỹ thuật Civilis.
+
+---
+Dự án được hoàn thiện bởi Antigravity. Chúc team Civilis có một chiến dịch bùng nổ! 🚀

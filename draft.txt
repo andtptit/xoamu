@@ -1,0 +1,24 @@
+// Google Apps Script để nhận dữ liệu từ Form Landing Page
+function doPost(e) {
+  try {
+    const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    const data = e.parameter;
+    
+    // Ghi dữ liệu vào hàng tiếp theo
+    sheet.appendRow([
+      new Date(), 
+      data.name || "", 
+      data.zalo || "", 
+      data.email || "", 
+      data.plan || "",
+      data.url || ""
+    ]);
+    
+    return ContentService.createTextOutput(JSON.stringify({ "result": "success" }))
+      .setMimeType(ContentService.MimeType.JSON);
+      
+  } catch (error) {
+    return ContentService.createTextOutput(JSON.stringify({ "result": "error", "error": error.toString() }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}

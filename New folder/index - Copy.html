@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khởi Động Giấc Mơ Hàn Quốc | Civilis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="logo Civilis favicon.png">
+    <style>
+        /* Specific adjustments for index3.html */
+        button,
+        .btn,
+        input,
+        select,
+        textarea {
+            font-family: 'Be Vietnam Pro', sans-serif !important;
+        }
+
+        .hero-v2 {
+            padding-top: 120px;
+            padding-bottom: 60px;
+        }
+
+        .hero-v2-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-form-box {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 25px;
+        }
+
+        .hero-media {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-media img {
+            width: 100%;
+            display: block;
+        }
+
+        .text-highlight {
+            color: var(--color-yellow);
+        }
+
+        .gift-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .dark-mode-section {
+            background: #1a2a4a;
+            /* Slightly softer dark blue */
+            color: #eee;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dark-mode-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(26, 42, 74, 0.95) 0%, rgba(26, 42, 74, 0.7) 100%), url('https://images.unsplash.com/photo-1517502474097-f9b30659dadb?q=80&w=1927&auto=format&fit=crop') center/cover no-repeat;
+            z-index: 1;
+        }
+
+        .dark-content {
+            position: relative;
+            z-index: 2;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .form-select {
+            width: 100%;
+            padding: 16px 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .agitation-emoji {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        /* Pastel Energy CTA */
+        .cta-pastel {
+            background: linear-gradient(135deg, #FFF9E6, #E6F3FF);
+            padding: 80px 0;
+        }
+
+        @media (max-width: 992px) {
+
+            .hero-v2-container,
+            .gift-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <img src="logo Civilis.png" alt="Civilis Logo" class="logo">
+            <div class="nav-links">
+                <a href="#about" class="nav-link">Trải nghiệm</a>
+                <a href="#gift" class="nav-link">Bí kíp</a>
+                <a href="#story" class="nav-link">Lời nhắn</a>
+                <a href="#cta" class="btn btn-red-pill nav-btn">NHẬN VÉ MIỄN PHÍ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 1: Hero Banner -->
+    <section class="hero hero-v2 blue-grad">
+        <div class="container">
+            <h1 class="hero-title"
+                style="font-size: 2.8rem; text-transform: none; text-align: center; margin-bottom: 50px; width: 100%; max-width: 900px; margin-left: auto; margin-right: auto;">
+                Hành trang xịn nhất mang sang Hàn không phải là Vali tiền, mà là... <br><span
+                    class="text-highlight">Tiếng Hàn!</span>
+            </h1>
+
+            <div class="hero-v2-container">
+                <div class="hero-text text-left">
+                    <p class="hero-desc" style="margin-bottom: 20px;">Bạn ấp ủ giấc mơ du học hay work-holiday tại xứ sở
+                        Kim Chi? Khoan vội lo lắng! Civilis tặng bạn "tấm vé VIP" - <strong>Bộ 20 video Nhập môn Tiếng
+                            Hàn cực cuốn</strong>. Học thử, trải nghiệm thật, tự tin cất cánh!</p>
+
+                    <div class="hero-form-box">
+                        <form>
+                            <input type="text" name="name" placeholder="Tên của bạn" required class="form-input"
+                                style="margin-bottom: 15px;">
+                            <input type="tel" name="zalo" placeholder="Số Zalo nhận quà" required class="form-input"
+                                style="margin-bottom: 15px;">
+                            <input type="email" name="email" placeholder="Email của bạn" required class="form-input"
+                                style="margin-bottom: 15px;">
+                            <button type="submit" class="btn btn-red-pill btn-block btn-large shadow"> NHẬN BỘ 20 VIDEO
+                                MIỄN PHÍ NGAY </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <!-- Hình ảnh bạn trẻ tự tin kéo vali -->
+                    <img src="./section1.jpg" alt="Giấc mơ Hàn Quốc tự tin">
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,0 C320,100 420,100 1440,0 L1440,120 L0,120 Z" fill="#FFC708"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Section 2: Agitation (Humorous) -->
+    <section id="about" class="pain-points yellow-bg">
+        <div class="container">
+            <h2 class="section-title text-blue" style="text-transform: none; font-size: 2.5rem; margin-bottom: 60px;">
+                Vượt ải "ngôn ngữ" để không biến thành người ngoài hành tinh tại Hàn 👽</h2>
+
+            <div class="card-horizontal-grid">
+                <!-- Card 1 -->
+                <div class="step-card">
+                    <div class="card-body text-center">
+                        <span class="agitation-emoji">🧂</span>
+                        <h3 class="text-blue mb-4">Đi siêu thị "hệ tâm linh"</h3>
+                        <p class="text-dark">Muốn mua muối nhưng lại vớ nhầm đường vì không biết đọc nhãn. Gọi gà rán mà
+                            toát mồ hôi hột dùng ngôn ngữ cơ thể.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="step-card">
+                    <div class="card-body text-center">
+                        <span class="agitation-emoji">😵‍💫</span>
+                        <h3 class="text-blue mb-4">Làm thêm kiểu "bất ổn"</h3>
+                        <p class="text-dark">Khách order một đằng, order một nẻo. Đi làm chỉ biết mỉm cười thân thiện và
+                            gật đầu "Nê, nê" trong vô vọng.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="step-card">
+                    <div class="card-body text-center">
+                        <span class="agitation-emoji">🚇</span>
+                        <h3 class="text-blue mb-4">Lạc đường quên lối về</h3>
+                        <p class="text-dark">Chữ trên tàu điện ngầm cứ như "mật mã", định đi Hongdae chơi nhưng lại lạc
+                            tuốt xuống Incheon.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <p
+                    style="font-size: 1.4rem; font-weight: 800; color: var(--color-blue-dark); text-transform: uppercase; background: rgba(255,255,255,0.7); display: inline-block; padding: 20px 40px; border-radius: 15px; border: 3px dashed var(--color-blue);">
+                    Biết tiếng Hàn một chút, cuộc sống tự nhiên "dễ thở" và chanh sả hơn rất nhiều!
+                </p>
+            </div>
+        </div>
+        <div class="yellow-wave-bottom">
+            <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,120 C320,20 420,20 1440,120 L1440,0 L0,0 Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Section 3: The Gift -->
+    <section id="gift" class="white-bg" style="padding: 100px 0;">
+        <div class="container gift-section">
+            <div class="mockup-media" style="position: relative;">
+                <!-- Glowing shadow behind -->
+                <div
+                    style="position: absolute; top: 10%; left: 5%; right: 5%; bottom: 5%; background: var(--color-red); filter: blur(40px); opacity: 0.25; z-index: 0; border-radius: 30px;">
+                </div>
+
+                <!-- Browser Window Frame -->
+                <div
+                    style="position: relative; z-index: 1; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.2); border: 1px solid #eee;">
+                    <!-- Window Header -->
+                    <div
+                        style="background: #f1f1f1; padding: 10px 15px; display: flex; gap: 8px; align-items: center; border-bottom: 1px solid #ddd;">
+                        <span
+                            style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f56; display: inline-block;"></span>
+                        <span
+                            style="width: 12px; height: 12px; border-radius: 50%; background: #ffbd2e; display: inline-block;"></span>
+                        <span
+                            style="width: 12px; height: 12px; border-radius: 50%; background: #27c93f; display: inline-block;"></span>
+                        <!-- <span style="margin-left: 15px; font-size: 0.8rem; color: #888; font-weight: 600; font-family: sans-serif;">elearning.civilis.com</span> -->
+                    </div>
+                    <!-- Captured Image -->
+                    <img src="20baihoc.JPG" alt="20 Bài học nhập môn tiếng Hàn"
+                        style="width: 100%; display: block; border-radius: 0 0 12px 12px;">
+                </div>
+
+                <!-- Floating Badge 1: Value -->
+                <div
+                    style="position: absolute; top: -20px; right: -20px; z-index: 2; background: var(--color-yellow); color: var(--color-blue-dark); padding: 12px 25px; border-radius: 30px; font-weight: 900; font-size: 1.05rem; box-shadow: 0 10px 25px rgba(255, 184, 0, 0.5); border: 3px solid #fff; transform: rotate(4deg); animation: float 3s ease-in-out infinite;">
+                    ⭐️ Trị giá: 1.500.000đ
+                </div>
+
+                <!-- Floating Badge 2: Scarcity / Hook -->
+                <div
+                    style="position: absolute; bottom: -20px; left: -15px; z-index: 2; background: var(--color-red); color: white; padding: 12px 20px; border-radius: 12px; font-weight: 800; font-size: 1rem; box-shadow: 0 12px 25px rgba(233, 33, 40, 0.5); display: flex; align-items: center; gap: 10px; border: 2px solid #fff;">
+                    <span style="font-size: 1.3rem;">🎁</span> Tặng MIỄN PHÍ hôm nay!
+                </div>
+
+                <style>
+                    @keyframes float {
+                        0% {
+                            transform: translateY(0px) rotate(4deg);
+                        }
+
+                        50% {
+                            transform: translateY(-8px) rotate(6deg);
+                        }
+
+                        100% {
+                            transform: translateY(0px) rotate(4deg);
+                        }
+                    }
+                </style>
+            </div>
+            <div>
+                <h2 class="section-title text-left text-blue" style="text-transform: none; font-size: 2.5rem;">Bật mí
+                    "Bí kíp bỏ túi" từ Civilis</h2>
+                <p class="section-subtitle text-left text-dark"
+                    style="margin-bottom: 30px; font-weight: 800; color: var(--color-red); font-size: 1.4rem;">20 Bài
+                    học giúp bạn tự tin "bắn" tiếng Hàn!</p>
+                <p style="font-size: 1.1rem; margin-bottom: 25px; line-height: 1.8;">Không lý thuyết khô khan, không hàn
+                    lâm nhàm chán. Đây là 20 video siêu thực tế giúp bạn "sinh tồn" cực mượt:</p>
+
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 25px; display: flex; align-items: flex-start; gap: 15px;">
+                        <span style="font-size: 1.8rem; line-height: 1;">✨</span>
+                        <div>
+                            <strong
+                                style="color: var(--color-blue); font-size: 1.2rem; display: block; margin-bottom: 5px;">Tự
+                                tin giao tiếp:</strong>
+                            <p style="margin: 0; color: #555;">Biết cách chào hỏi, giới thiệu bản thân chuẩn idol.</p>
+                        </div>
+                    </li>
+                    <li style="margin-bottom: 25px; display: flex; align-items: flex-start; gap: 15px;">
+                        <span style="font-size: 1.8rem; line-height: 1;">✨</span>
+                        <div>
+                            <strong
+                                style="color: var(--color-blue); font-size: 1.2rem; display: block; margin-bottom: 5px;">Thực
+                                chiến đời sống:</strong>
+                            <p style="margin: 0; color: #555;">Mua sắm, gọi món, đi tàu điện ngầm... chuyện nhỏ!</p>
+                        </div>
+                    </li>
+                    <li style="margin-bottom: 25px; display: flex; align-items: flex-start; gap: 15px;">
+                        <span style="font-size: 1.8rem; line-height: 1;">✨</span>
+                        <div>
+                            <strong
+                                style="color: var(--color-blue); font-size: 1.2rem; display: block; margin-bottom: 5px;">Test
+                                độ "hợp cạ":</strong>
+                            <p style="margin: 0; color: #555;">Trải nghiệm làm du học sinh thực thụ ngay tại nhà để xem
+                                mình có "mê" tiếng Hàn không.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Guide -->
+    <section id="guide" class="guide-section">
+        <div class="container">
+            <h2 class="section-title text-blue" style="text-transform: none; font-size: 2.8rem; margin-bottom: 20px;">
+                Chỉ 3 Bước Đơn Giản Để Bắt Đầu! 🚀</h2>
+
+            <div class="guide-grid">
+                <!-- Step 1 -->
+                <div class="guide-step step-blue">
+                    <div class="step-number">1</div>
+                    <span class="guide-icon">📩</span>
+                    <h3 class="guide-title">Đăng ký thông tin</h3>
+                    <p class="guide-text">Để lại số điện thoại và <strong>Email</strong> của bạn ở Form. Civilis sẽ lập
+                        tức gửi tặng bạn món quà này.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="guide-step step-yellow">
+                    <div class="step-number">2</div>
+                    <span class="guide-icon">🔑</span>
+                    <h3 class="guide-title">Check Email lấy mã</h3>
+                    <p class="guide-text">Mở hòm thư Email (nhớ check cả mục Spam), copy ngay đoạn <strong>Mã Kích
+                            Hoạt</strong> xịn sò vừa nhận được nhé.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="guide-step step-red">
+                    <div class="step-number">3</div>
+                    <span class="guide-icon">🔓</span>
+                    <h3 class="guide-title">Nhập mã & Học thôi!</h3>
+                    <p class="guide-text">Truy cập nền tảng <strong>Topik4u</strong>, dán mã vào ô kích hoạt và vũ trụ
+                        tiếng Hàn đã sẵn sàng!</p>
+                </div>
+            </div>
+
+            <div class="topik4u-preview">
+                <p style="font-weight: 800; color: var(--color-blue-dark); font-size: 1.1rem;">👇 Giao diện nhập mã kích
+                    hoạt siêu đơn giản trên Topik4u 👇</p>
+
+                <div class="guide-images-grid">
+                    <div class="instruction-box">
+                        <img src="huongdan_1.jpg" alt="Truy cập topik4u">
+                        <p>1. Truy cập topik4u</p>
+                    </div>
+                    <div class="instruction-box">
+                        <img src="huongdan_2.jpg" alt="Vào giao diện nhập mã">
+                        <p>2. Vào giao diện nhập mã</p>
+                    </div>
+                    <div class="instruction-box">
+                        <img src="huongdan_3.jpg" alt="Học tập ngay thôi">
+                        <p>3. Học tập ngay thôi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Brand Story (Inspiring) -->
+    <section id="story" class="dark-mode-section">
+        <div class="dark-mode-bg"></div>
+        <div class="container dark-content">
+            <h2 class="section-title"
+                style="color: var(--color-yellow); text-align: left; font-size: 2.5rem; text-transform: none; margin-bottom: 40px; line-height: 1.3;">
+                Gửi những đôi chân đang cuồng đi và những trái tim mê xê dịch...</h2>
+
+            <div
+                style="font-size: 1.25rem; line-height: 1.8; border-left: 4px solid var(--color-yellow); padding-left: 30px; background: rgba(255,255,255,0.05); padding: 30px; border-radius: 0 15px 15px 0; backdrop-filter: blur(5px);">
+                <p style="margin-bottom: 20px; font-style: italic; color: #fff;">
+                    "Thanh xuân là những chuyến đi và trải nghiệm. Civilis hiểu bạn đang háo hức thế nào với giấc mơ Hàn
+                    Quốc."
+                </p>
+                <p style="margin-bottom: 20px; color: #ddd;">
+                    Nhưng tụi mình cũng biết, bước ra thế giới rộng lớn đôi khi có chút chông chênh. Civilis không muốn
+                    bạn sang đó với một chiếc balo rỗng ngôn ngữ.
+                </p>
+                <p style="margin-bottom: 20px; color: #ddd;">
+                    Tụi mình muốn bạn có thể tự hào gọi món bằng tiếng Hàn, tự tin kết bạn, và có một thanh xuân rực rỡ
+                    nhất tại xứ sở Kim Chi.
+                </p>
+                <p style="font-weight: 800; color: var(--color-yellow); font-size: 1.35rem;">
+                    20 video này là món quà nhỏ tụi mình gói ghém cho bạn. Hãy coi nó như bước chạy đà đầu tiên. Cứ học
+                    đi, trải nghiệm đi, và tự tin tỏa sáng nhé!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Engagement CTA (Dynamic/Pastel) -->
+    <section id="cta" class="cta-pastel">
+        <div class="container reg-container">
+            <div class="reg-form-wrapper"
+                style="border-top: 8px solid var(--color-blue); padding: 50px; background: #fff;">
+                <h2 class="text-blue text-center mb-4" style="text-transform: none; font-size: 2.5rem;">
+                    <br>Cùng Civilis khởi động hành trình của bạn ngay hôm nay! 🚀
+                </h2>
+                <p class="text-center mb-4 text-dark" style="font-weight: 600; font-size: 1.1rem;">Điền nhanh thông tin
+                    để Civilis gửi tặng mã khóa học vào Zalo cho bạn nhé. Chần chờ gì nữa, let's go!</p>
+
+                <form class="reg-form">
+                    <input type="text" name="name" placeholder="Tên của bạn là gì nè?" required class="form-input">
+                    <input type="tel" name="zalo" placeholder="Số Zalo nhận quà nhé" required class="form-input">
+                    <input type="email" name="email" placeholder="Email của bạn để nhận mã nhé" required
+                        class="form-input">
+                    <select name="plan" class="form-select" required>
+                        <option value="">Kế hoạch của bạn là?</option>
+                        <option value="duhoc">Mình muốn đi Du học</option>
+                        <option value="laodong">Mình muốn đi làm</option>
+                        <option value="tinhsau">Mình tò mò muốn học thử thui</option>
+                    </select>
+                    <button type="submit" class="btn btn-red-pill btn-block btn-large shadow"
+                        style="font-size: 1.25rem; padding: 20px; background: linear-gradient(135deg, var(--color-red), #ff4d4d);">🎉
+                        GỬI MÃ CHO MÌNH NHÉ!</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer blue-grad">
+        <div class="container footer-layout">
+            <div class="footer-col" style="text-align: center;">
+                <img src="logo Civilis.png" alt="Civilis" style="height: 60px; margin-bottom: 20px;">
+                <h3 class="footer-title"
+                    style="color: var(--color-yellow); letter-spacing: 0.5px; margin-bottom: 15px; font-size: 1.4rem;">
+                    Civilis - Du Học Hàn Quốc</h3>
+                <p style="margin-bottom: 10px;">➤ <strong>Hotline/ Zalo:</strong> 077.444.0000</p>
+                <p style="margin-bottom: 10px;">➤ <strong>Website:</strong> <a href="https://civilis.edu.vn"
+                        style="color: var(--color-white); text-decoration: none;">https://civilis.edu.vn</a></p>
+                <p style="margin-bottom: 10px;">➤ <strong>Trụ sở chính:</strong> Số 79 Ngụy Như Kon Tum, Thanh Xuân, Hà
+                    Nội</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Bản quyền thuộc về - Civilis.</p>
+        </div>
+    </footer>
+    <script>
+        // CẤU HÌNH: Dán URL Web App của Google Apps Script vào đây sau khi Deploy thành công
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw1y9raanqYfhdGT-257WP0G51U2RrOqBwXg7q12svYfx8aGuwhCvTjVXNBUDD6sYaX/exec';
+
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerText;
+
+            // Hiển thị trạng thái đang gửi
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'Đang đăng ký...';
+
+            // Nếu chưa cấu hình URL, hiện thông báo và chuyển hướng giả lập
+            if (SCRIPT_URL === 'YOUR_GOOGLE_SCRIPT_URL_HERE') {
+                console.warn('Vui lòng cấu hình SCRIPT_URL trong file index3.html');
+                setTimeout(() => {
+                    window.location.href = 'thankyou.html';
+                }, 1000);
+                return;
+            }
+
+            try {
+                const formData = new FormData(form);
+                formData.append('url', window.location.href); // Thêm URL trang hiện tại
+                const queryParams = new URLSearchParams(formData).toString();
+
+                // Gửi dữ liệu qua fetch (sử dụng GET/POST tùy cấu hình Apps Script)
+                // Lưu ý: Apps Script yêu cầu mode 'no-cors' nếu không muốn bị lỗi CORS phức tạp
+                await fetch(`${SCRIPT_URL}?${queryParams}`, {
+                    method: 'POST',
+                    mode: 'no-cors'
+                });
+
+                // Thành công: Chuyển hướng sang trang cảm ơn
+                window.location.href = 'thankyou.html';
+
+            } catch (error) {
+                console.error('Lỗi khi gửi form:', error);
+                alert('Có lỗi xảy ra, vui lòng thử lại sau hoặc liên hệ Zalo 077.444.0000');
+                submitBtn.disabled = false;
+                submitBtn.innerText = originalBtnText;
+            }
+        }
+
+        // Đăng ký sự kiện submit cho cả 2 form
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', handleFormSubmit);
+        });
+
+        // Xử lý cuộn mượt (Smooth Scroll) có bù trừ chiều cao Header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    const headerHeight = 80; // Chiều cao của navbar cố định
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

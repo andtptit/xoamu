@@ -1,0 +1,59 @@
+HƯỚNG DẪN CẤU HÌNH TRACKING (META PIXEL & GOOGLE ANALYTICS 4)
+Để theo dõi chuyển đổi từ các chiến dịch QC Facebook/Google một cách chính xác nhất, file code đã được bổ sung sẵn các "vị trí chuẩn bị" (Placeholders). Team Ads/Marketing chỉ cần làm theo các bước sau:
+
+I. CẤU HÌNH FACEBOOK PIXEL (META PIXEL)
+------------------------------------------------------------
+Mục tiêu: Ghi nhận chính xác số lượng chuyển đổi (Lead) khi khách hàng điền form thành công.
+
+Bước 1: Lấy mã Pixel (Base Code)
+- Mở Meta Events Manager. Vào "Cài đặt" (Settings), chọn "Thêm mã thủ công".
+- Copy toàn bộ đoạn mã Base Code ban đầu.
+
+Bước 2: Gắn mã vào Landing Page (index.html)
+- Mở file `index.html`. Tìm đến thẻ `<head>` (khoảng dòng 15-25).
+- Dán đoạn Base Code vừa copy vào ngay bên dưới dòng chú thích: 
+  "<!-- DÁN PIXEL CODE Ở ĐÂY -->"
+
+Bước 3: Gắn mã & Theo dõi chuyển đổi tại Trang Cảm Ơn (thankyou.html)
+- Đây là bước BẮT BUỘC để đếm chuyển đổi. Chỉ khi khách hàng đến trang này mới tính là 1 Lead.
+- Mở file `thankyou.html`. Dán Base Code vào phần `<head>` (tìm dòng ghi "<!-- DÁN PIXEL CODE Ở ĐÂY -->").
+- TRỌNG TÂM: Mặc định, Base Code của Facebook có sẵn dòng `fbq('track', 'PageView');`.
+- ĐỂ THEO DÕI LEAD: Ngay bên dưới dòng `PageView` đó, thêm thủ công dòng sau:
+  `fbq('track', 'Lead');`
+
+Mẫu đoạn code tại thankyou.html sẽ trông như sau:
+<script>
+  !function(f,b,e,v,n,t,s)
+  ... (đoạn mã dài) ...
+  fbq('init', 'ID_PIXEL_CỦA_BẠN');
+  fbq('track', 'PageView');
+  fbq('track', 'Lead');     <-- Dòng này là cực kỳ quan trọng!
+</script>
+
+
+II. CẤU HÌNH GOOGLE ANALYTICS 4 (GTAG.JS) / GOOGLE ADS
+------------------------------------------------------------
+Tương tự như Facebook Pixel, bạn có thể triển khai hệ thống GA4 để phân tích lượng truy cập (Traffic) cũng như ghi nhận chuyển đổi trên Google Ads.
+
+Bước 1: Lấy mã gtag.js
+- Truy cập Google Analytics > Quản trị > Luồng dữ liệu (Data Streams).
+- Lấy đoạn mã thẻ Analytics tag (gtag.js).
+
+Bước 2: Dán thẻ gtag.js vào TOÀN BỘ trang
+- Mở file `index.html` và `thankyou.html`.
+- Dán đoạn thẻ gtag.js vào khoảng chú thích "<!-- DÁN GOOGLE TAG (gtag.js) Ở ĐÂY -->" bên trong thẻ `<head>` của cả 2 file.
+
+Bước 3: Theo dõi chuyển đổi Conversion (Tùy chọn)
+- Nếu bạn chạy Google Ads và muốn tính sự kiện tại `thankyou.html` là 1 Conversion:
+- Dán đoạn event snippet do Google Ads cung cấp (đoạn code chứa ID và AW-XXX) vào dưới cùng của Base Code tại `thankyou.html`.
+
+Mẫu đoạn event snippet Google Ads tại thankyou.html:
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-123456789/AbCdEfGhIjK'});
+</script>
+
+---
+XIN LƯU Ý:
+1. Sau khi thêm mã, hãy upload lại file `index.html` và `thankyou.html` lên Hosting/Server của bạn.
+2. Cài đặt extension "Meta Pixel Helper" và "Google Tag Assistant" trên Chrome.
+3. Tải lại trang web và điền form dùng thử, xác nhận extension đã báo xanh bắt được thẻ `Lead` khi chuyển sang trang `thankyou.html` là bạn đã hoàn thành công việc xuất sắc!

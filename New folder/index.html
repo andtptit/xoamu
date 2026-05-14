@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xóa Mù Tiếng Hàn | Đừng đi Hàn nếu không biết điều này</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .gift-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        @media (max-width: 992px) {
+            .gift-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <img src="logo Civilis.png" alt="Civilis Logo" class="logo">
+            <div class="nav-links">
+                <a href="#about" class="nav-link">Lộ trình học</a>
+                <a href="#story" class="nav-link">Câu chuyện học viên</a>
+                <a href="#cta" class="btn btn-red-pill nav-btn">ĐĂNG KÝ NGAY</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Blue Background) -->
+    <section class="hero blue-grad">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <p class="hero-top-text">CHIẾN DỊCH VÌ NGƯỜI VIỆT TẠI XỨ NGƯỜI</p>
+                <h1 class="hero-title">XOÁ MÙ <br> TIẾNG HÀN</h1>
+                <p class="hero-subtitle"><em>Chỉ với</em> <strong>20 VIDEO NỀN TẢNG</strong></p>
+                <p class="hero-desc">Đừng đăng ký đi Hàn Quốc nếu không biết điều này. Trang bị bộ giáp bảo vệ ngôn ngữ trước khi dấn thân.</p>
+                <a href="#cta" class="btn btn-red-pill btn-large">ĐĂNG KÝ GIẢI CỨU</a>
+            </div>
+        </div>
+        <!-- SVG Wave Bottom for the next yellow section -->
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,0 C320,100 420,100 1440,0 L1440,120 L0,120 Z" fill="#FFC708"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Pain Points Section (Yellow Background) -->
+    <section id="about" class="pain-points yellow-bg">
+        <div class="container">
+            <h2 class="section-title text-blue">TẠI SAO PHẢI XÓA MÙ TIẾNG HÀN?</h2>
+            <p class="section-subtitle text-dark">Hàng ngàn người Việt đang bước sang Hàn Quốc như những "người khiếm thính và khiếm ngôn".</p>
+            
+            <div class="card-horizontal-grid">
+                <!-- Card 1 -->
+                <div class="step-card">
+                    <div class="card-header blue-header">NGƯỜI LAO ĐỘNG</div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Đi vì miếng cơm manh áo nhưng dễ bị lừa dối.</li>
+                            <li>Bị môi giới vẽ ra viễn cảnh màu hồng.</li>
+                            <li>Sang lao động bị bóc lột mà không biết kêu ai lập biên bản.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="step-card">
+                    <div class="card-header blue-header">DU HỌC SINH</div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Sang Hàn mà ngôn ngữ rỗng tuếch là tự sát.</li>
+                            <li>Không biết tiếng = Không việc làm thêm.</li>
+                            <li>Áp lực tài chính dẫn tới trốn ra ngoài, đánh mất tương lai.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="step-card">
+                    <div class="card-header blue-header">KHÁCH THĂM THÂN / DU LỊCH</div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Lạc lõng ngay giữa phố phường sầm uất.</li>
+                            <li>Dễ bị "chặt chém" khi mua sắm.</li>
+                            <li>Gặp sự cố y tế không biết giải trình và tự cứu mình.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Yellow Wave pointing down to White Section -->
+        <div class="yellow-wave-bottom">
+            <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,120 C320,20 420,20 1440,120 L1440,0 L0,0 Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Section: The Gift -->
+    <section id="gift" class="white-bg" style="padding: 100px 0;">
+        <div class="container gift-section">
+            <div class="mockup-media" style="position: relative;">
+                <!-- Glowing shadow behind -->
+                <div style="position: absolute; top: 10%; left: 5%; right: 5%; bottom: 5%; background: var(--color-red); filter: blur(40px); opacity: 0.25; z-index: 0; border-radius: 30px;"></div>
+                
+                <!-- Browser Window Frame -->
+                <div style="position: relative; z-index: 1; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.2); border: 1px solid #eee;">
+                    <!-- Window Header -->
+                    <div style="background: #f1f1f1; padding: 10px 15px; display: flex; gap: 8px; align-items: center; border-bottom: 1px solid #ddd;">
+                        <span style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f56; display: inline-block;"></span>
+                        <span style="width: 12px; height: 12px; border-radius: 50%; background: #ffbd2e; display: inline-block;"></span>
+                        <span style="width: 12px; height: 12px; border-radius: 50%; background: #27c93f; display: inline-block;"></span>
+                        <span style="margin-left: 15px; font-size: 0.8rem; color: #888; font-weight: 600; font-family: sans-serif;">elearning.civilis.com</span>
+                    </div>
+                    <!-- Captured Image -->
+                    <img src="20baihoc.JPG" alt="20 Bài học nhập môn tiếng Hàn" style="width: 100%; display: block; border-radius: 0 0 12px 12px;">
+                </div>
+                
+                <!-- Floating Badge 1: Value -->
+                <div style="position: absolute; top: -20px; right: -20px; z-index: 2; background: var(--color-yellow); color: var(--color-blue-dark); padding: 12px 25px; border-radius: 30px; font-weight: 900; font-size: 1.05rem; box-shadow: 0 10px 25px rgba(255, 184, 0, 0.5); border: 3px solid #fff; transform: rotate(4deg); animation: float 3s ease-in-out infinite;">
+                    ⭐️ Trị giá: 1.500.000đ
+                </div>
+                
+                <!-- Floating Badge 2: Scarcity / Hook -->
+                <div style="position: absolute; bottom: -20px; left: -15px; z-index: 2; background: var(--color-red); color: white; padding: 12px 20px; border-radius: 12px; font-weight: 800; font-size: 1rem; box-shadow: 0 12px 25px rgba(233, 33, 40, 0.5); display: flex; align-items: center; gap: 10px; border: 2px solid #fff;">
+                    <span style="font-size: 1.3rem;">🎁</span> Tặng MIỄN PHÍ hôm nay!
+                </div>
+                
+                <style>
+                    @keyframes float {
+                        0% { transform: translateY(0px) rotate(4deg); }
+                        50% { transform: translateY(-8px) rotate(6deg); }
+                        100% { transform: translateY(0px) rotate(4deg); }
+                    }
+                </style>
+            </div>
+            <div>
+                <h2 class="section-title text-left text-blue" style="text-transform: none; font-size: 2.8rem;">20 Video "Thử Lửa"</h2>
+                <p class="section-subtitle text-left text-dark" style="margin-bottom: 30px; font-weight: 800; color: var(--color-red); font-size: 1.4rem;">Phép thử nhân phẩm trước khi cất cánh!</p>
+                <p style="font-size: 1.1rem; margin-bottom: 25px; line-height: 1.8;">Chúng mình không tặng bạn "vài ba câu chào hỏi cho vui". Đây là 20 bài học nền tảng nhất được đóng gói thành một khóa E-learning chuyên nghiệp.</p>
+                
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 25px; display: flex; align-items: flex-start; gap: 15px;">
+                        <span style="font-size: 1.8rem; line-height: 1;">🔥</span>
+                        <div>
+                            <strong style="color: var(--color-blue); font-size: 1.2rem; display: block; margin-bottom: 5px;">Thực chiến:</strong>
+                            <p style="margin: 0; color: #555;">Các tình huống thật tại sân bay, phòng trọ, chỗ làm thêm.</p>
+                        </div>
+                    </li>
+                    <li style="margin-bottom: 25px; display: flex; align-items: flex-start; gap: 15px;">
+                        <span style="font-size: 1.8rem; line-height: 1;">🔥</span>
+                        <div>
+                            <strong style="color: var(--color-blue); font-size: 1.2rem; display: block; margin-bottom: 5px;">Tiết kiệm:</strong>
+                            <p style="margin: 0; color: #555;">Giữ lại cho bạn hàng chục triệu tiền cọc nếu bạn nhận ra... mình không hề hợp với việc học tiếng Hàn.</p>
+                        </div>
+                    </li>
+                    <li style="margin-bottom: 25px; display: flex; align-items: flex-start; gap: 15px;">
+                        <span style="font-size: 1.8rem; line-height: 1;">🔥</span>
+                        <div>
+                            <strong style="color: var(--color-blue); font-size: 1.2rem; display: block; margin-bottom: 5px;">100% Miễn phí:</strong>
+                            <p style="margin: 0; color: #555;">Lời cam kết đồng hành từ Civilis.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Story Section (White Background) -->
+    <section id="story" class="story-section white-bg">
+        <div class="container">
+            <div class="banner-box">
+                <span class="banner-badge">Tâm thư</span>
+                <h2 class="banner-title text-blue">NƯỚC MẮT TẠI INCHEON</h2>
+                <div class="banner-content">
+                    <p class="quote">
+                        "Tôi đã chứng kiến quá nhiều giọt nước mắt tại sân bay Incheon. Không phải vì nhớ nhà, mà vì sợ hãi. Sợ vì không hiểu người ta nói gì, sợ vì nhận ra thực tế không giống như lời môi giới."
+                    </p>
+                    <p class="desc">
+                        20 video này là tâm huyết, là tài sản của Civilis. Chúng tôi không thu phí vì muốn bạn có cơ hội 'thử lửa'. Hãy học hết 20 bài này đi. Nếu thấy ổn, hãy đi Hàn. Nếu thấy không hợp, hãy dừng lại. Đừng mang cả gia tài của cha mẹ đi đánh cược khi trong tay không có lấy một chữ.
+                    </p>
+                    <div class="center-btn">
+                        <a href="#cta" class="btn btn-red-pill btn-large shadow">CÔNG PHÁ 20 VIDEO NGAY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration / Form Section -->
+    <section id="cta" class="registration-section">
+        <div class="container reg-container">
+            <!-- Form centered -->
+            <div class="reg-form-wrapper">
+                <h2 class="text-blue text-center mb-4">HÃY LÀ NGƯỜI ĐI HÀN <br>CÓ TRÍ TUỆ</h2>
+                <p class="text-center mb-4 text-dark">Để lại thông tin nhận mã Code truy cập trọn đời bộ 20 video Hội nhập tiếng Hàn</p>
+                <form class="reg-form" onsubmit="event.preventDefault(); alert('Thành công! Chúng tôi sẽ liên hệ bạn.');">
+                    <input type="text" placeholder="Họ và tên" required class="form-input">
+                    <input type="tel" placeholder="Số điện thoại" required class="form-input">
+                    <select class="form-input">
+                        <option>Bạn quan tâm đến?</option>
+                        <option>Lao động</option>
+                        <option>Du học</option>
+                        <option>Du lịch / Thăm thân</option>
+                    </select>
+                    <button type="submit" class="btn btn-red-pill btn-block btn-large">NHẬN MÃ TRUY CẬP</button>
+                    <p class="form-note">Cam kết bảo mật thông tin 100%.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer blue-grad">
+        <div class="container footer-layout">
+            <div class="footer-col">
+                <img src="logo Civilis.png" alt="Civilis" style="height: 60px; margin-bottom: 20px; filter: brightness(0) invert(1);">
+                <h3 class="footer-title" style="color: var(--color-yellow); letter-spacing: 0.5px; margin-bottom: 15px; font-size: 1.4rem;">𝐂𝐢𝐯𝐢𝐥𝐢𝐬 - 𝐃𝐮 𝐇𝐨̣𝐜 𝐇𝐚̀𝐧 𝐐𝐮𝐨̂́𝐜</h3>
+                <p>➤ Hotline/ Zalo: 077.444.0000</p>
+                <p>➤ Website: <a href="https://civilis.edu.vn" style="color: white; text-decoration: none;">https://civilis.edu.vn</a></p>
+                <p>➤ Trụ sở chính: Số 79 Ngụy Như Kon Tum, Thanh Xuân, Hà Nội</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Bản quyền thuộc về Chiến dịch Xóa mù tiếng Hàn 2026.</p>
+        </div>
+    </footer>
+</body>
+</html>

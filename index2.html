@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPIK4u - Ra Mắt Nền Tảng Học Tiếng Hàn Thông Minh | Tặng 1000 Mã Khóa Học</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="topik4u.css">
+    <link rel="icon" type="image/png" href="favicon.png"> <!-- Cần thay bằng favicon thực tế nếu có -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">TOPIK<span>4u</span></a>
+            <div class="nav-links">
+                <a href="#register" class="btn btn-primary">NHẬN MÃ NGAY</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content animate">
+                <span class="badge">🔥 RA MẮT NỀN TẢNG TOPIK4U</span>
+                <h1>Học Tiếng Hàn <br><span class="text-gradient">Chưa Bao Giờ Dễ Dàng Đến Thế</span></h1>
+                <p>Nhân dịp ra mắt, TOPIK4u dành tặng <strong style="color: var(--primary);">1.000 mã kích hoạt miễn phí</strong> cho khóa học "Nhập Môn Tiếng Hàn - Xóa Mù Chữ Cái". Cơ hội duy nhất để bạn làm chủ ngôn ngữ Hàn Quốc từ con số 0.</p>
+                
+                <div class="hero-media-mobile animate delay-1" style="display: none; margin-bottom: 30px;">
+                    <img src="topik4u_hero.png" alt="TOPIK4u Hero" style="width: 100%; border-radius: 20px; box-shadow: var(--shadow-lg);">
+                </div>
+
+                <div class="hero-stats" style="display: flex; gap: 30px; margin-top: 20px;">
+                    <div>
+                        <h3 style="font-size: 1.5rem; color: var(--primary);">1000+</h3>
+                        <p style="font-size: 0.875rem;">Mã quà tặng</p>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; color: var(--secondary);">20+</h3>
+                        <p style="font-size: 0.875rem;">Bài học chuyên sâu</p>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; color: var(--accent);">MIỄN PHÍ</h3>
+                        <p style="font-size: 0.875rem;">Trọn đời</p>
+                    </div>
+                </div>
+                
+                <div class="hero-media-desktop animate delay-2" style="margin-top: 40px;">
+                    <img src="topik4u_hero.png" alt="TOPIK4u Hero" style="width: 100%; max-width: 500px; border-radius: 24px; box-shadow: var(--shadow-lg); border: 8px solid white;">
+                </div>
+            </div>
+            <div class="hero-form animate delay-1" id="register">
+                <div class="form-card">
+                    <h2 style="margin-bottom: 24px; text-align: center;">Đăng Ký Nhận Quà</h2>
+                    <form id="topikForm">
+                        <div class="form-group">
+                            <label for="name">Họ và tên</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Nguyễn Văn A" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zalo">Số Zalo nhận mã</label>
+                            <input type="tel" id="zalo" name="zalo" class="form-control" placeholder="09xx xxx xxx" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="yourname@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="plan">Bạn muốn học tiếng Hàn để làm gì?</label>
+                            <select id="plan" name="plan" class="form-control" required>
+                                <option value="" disabled selected>Chọn mục tiêu của bạn</option>
+                                <option value="duhoc">Du học</option>
+                                <option value="laodong">Đi làm / Xuất khẩu lao động</option>
+                                <option value="sothich">Sở thích / Xem phim</option>
+                                <option value="khac">Khác</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" style="font-size: 1.1rem; padding: 18px;">XÁC NHẬN NHẬN MÃ 🚀</button>
+                    </form>
+                    <p style="font-size: 0.75rem; text-align: center; margin-top: 16px; color: var(--text-muted);">Mã sẽ được gửi trực tiếp qua Zalo/Email sau 3-5 phút.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 2: Message from TOPIK4u -->
+    <section class="message-section">
+        <div class="container">
+            <div class="message-card animate">
+                <h2 class="text-gradient">GỬI BẠN – NGƯỜI ĐANG CẦM TRÊN TAY TẤM VÉ ĐẾN XỨ SỞ KIM CHI</h2>
+                <div class="message-content">
+                    <p>Chào bạn, hành trình đến Hàn Quốc của bạn sẽ là một trải nghiệm rực rỡ hay một chuỗi ngày vật lộn? Câu trả lời nằm ở cách bạn chuẩn bị ngôn ngữ ngay hôm nay.</p>
+                    <p><strong>TOPIK4u</strong> ra đời để xóa bỏ nỗi sợ mang tên "bất đồng ngôn ngữ" bằng một hệ sinh thái học tập thông minh.</p>
+                    <p>Chúng tôi không dạy bạn cách để trở thành một nhà ngôn ngữ học, chúng tôi dạy bạn cách để sinh tồn và thành công tại Hàn Quốc.</p>
+                    <p>TOPIK4u tặng bạn bộ 20 video bài giảng tâm huyết này như một lời cam kết về chất lượng. Học thông minh là cách tốt nhất để bạn trân trọng thanh xuân và tiền bạc của chính mình.</p>
+                    <p class="highlight-text">Cùng TOPIK4u, chạm tay vào giấc mơ Hàn Quốc theo cách thông minh nhất nhé!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header animate">
+                <h2>Tại sao nên chọn TOPIK4u?</h2>
+                <p>Nền tảng học tập hiện đại, tối ưu hóa cho người Việt lần đầu làm quen với tiếng Hàn.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card animate delay-1">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Lộ Trình Tinh Gọn</h3>
+                    <p>Không học dàn trải. Tập trung vào những kiến thức cốt lõi nhất để bạn có thể đọc và viết tiếng Hàn chỉ sau vài giờ.</p>
+                </div>
+                <div class="feature-card animate delay-2">
+                    <div class="feature-icon">📱</div>
+                    <h3>Học Mọi Lúc Mọi Nơi</h3>
+                    <p>Giao diện tương thích hoàn hảo với điện thoại, máy tính bảng và laptop. Học bất cứ khi nào bạn có thời gian rảnh.</p>
+                </div>
+                <div class="feature-card animate delay-3">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Kích Hoạt Tức Thì</h3>
+                    <p>Sau khi đăng ký, bạn nhận ngay mã kích hoạt để bắt đầu hành trình chinh phục tiếng Hàn ngay lập tức.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="promo-banner">
+        <div class="container animate">
+            <h2>Chỉ Còn 157 Mã Miễn Phí!</h2>
+            <p>Đừng để cơ hội trôi qua. Hàng nghìn người đã bắt đầu, còn bạn thì sao?</p>
+            <a href="#register" class="btn btn-primary" style="background: var(--white); color: var(--primary);">ĐĂNG KÝ NGAY TRƯỚC KHI HẾT HẠN</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding: 60px 0; background: var(--bg-dark); color: var(--white); text-align: center;">
+        <div class="container">
+            <h2 style="margin-bottom: 20px;">TOPIK<span style="color: var(--secondary);">4u</span></h2>
+            <p style="opacity: 0.6; font-size: 0.875rem;">© 2024 TOPIK4u Learning Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzEDUVa_zI-Ttkw2GCwrjby1dl-RICexidbF-R2PyLpJ_1EIvbX1EMlSAHXCSCgm0aw/exec';
+
+        document.getElementById('topikForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const btn = form.querySelector('button');
+            const originalText = btn.innerText;
+
+            btn.disabled = true;
+            btn.innerText = 'ĐANG XỬ LÝ...';
+
+            try {
+                const formData = new FormData(form);
+                formData.append('url', window.location.href);
+                formData.append('source', 'topik4u_index2');
+                
+                const queryParams = new URLSearchParams(formData).toString();
+                
+                await fetch(`${SCRIPT_URL}?${queryParams}`, {
+                    method: 'GET',
+                    mode: 'no-cors'
+                });
+
+                window.location.href = 'thankyou.html';
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Có lỗi xảy ra, vui lòng thử lại sau.');
+                btn.disabled = false;
+                btn.innerText = originalText;
+            }
+        });
+
+        // Simple scroll animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

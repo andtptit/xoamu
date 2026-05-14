@@ -1,0 +1,54 @@
+# CỔ CẨM NANG THƯƠNG HIỆU (BRAND IDENTITY) - CIVILIS
+Tài liệu hướng dẫn thiết kế UI/UX để giữ tính đồng nhất cho các dự án của Civilis.
+============================================================
+
+I. HỆ THỐNG PHÔNG CHỮ (TYPOGRAPHY)
+------------------------------------------------------------
+- Phông chữ chính: **Be Vietnam Pro** (Google Fonts).
+- Tại sao chọn: Đây là phông chữ hiện đại, hỗ trợ Tiếng Việt cực tốt (không lỗi dấu), mang lại cảm giác chuyên nghiệp nhưng vẫn trẻ trung.
+- Quy tắc sử dụng:
+  + Tiêu đề lớn (H1, H2): Cân nặng (Weight) 800 hoặc 900.
+  + Tiêu đề phụ (H3, H4): Weight 700.
+  + Nội dung (Body): Weight 400 hoặc 500.
+
+II. BẢNG MÀU THƯƠNG HIỆU (COLOR PALETTE)
+------------------------------------------------------------
+Dựa trên nhận diện cốt lõi của Civilis, chúng ta sử dụng bộ 3 màu tương phản mạnh:
+
+1. Xanh Navy (Primary Blue): `#1b3d7a`
+   - Ý nghĩa: Sự tin cậy, chuyên nghiệp của một tổ chức giáo dục.
+   - Sử dụng cho: Header, tiêu đề chính, các nút bấm phụ.
+
+2. Vàng (Accent Yellow): `#FFB800`
+   - Ý nghĩa: Năng lượng, sự thông thái và nổi bật.
+   - Sử dụng cho: Các điểm nhấn quan trọng (Highlight), icon, hoặc nền các phần cần sự chú ý cao.
+
+3. Đỏ (Action Red): `#E82A2A`
+   - Ý nghĩa: Sự đam mê, thúc giục hành động (CTA).
+   - Sử dụng cho: Các nút "Đăng ký ngay", "Nhận quà", hoặc các cảnh báo quan trọng.
+
+*Gợi ý Gradient (Dải màu):*
+- Blue-Grad: `linear-gradient(135deg, #1A428A, #122b59)` (Dùng cho nền Hero).
+
+III. PHONG CÁCH UI/UX (DESIGN STYLE)
+------------------------------------------------------------
+1. Glassmorphism (Hiệu ứng kính):
+   - Sử dụng nền trắng mờ (rgba 255, 255, 255, 0.15) kèm `backdrop-filter: blur(10px)` để tạo cảm giác hiện đại, sang trọng cho các box thông tin.
+
+2. Bo góc (Border Radius):
+   - Sử dụng bo góc lớn (15px - 20px) cho các Card và Box để giao diện mềm mại, thân thiện.
+   - Nút bấm (Buttons) nên dùng kiểu "Pill" (Bo tròn hoàn toàn - 50px).
+
+3. Khoảng trắng & Phân tách:
+   - Sử dụng "Wave" (đường lượn sóng) để chuyển tiếp giữa các phần, thay vì các đường kẻ ngang cứng nhắc. Điều này giúp người dùng cảm thấy dòng chảy nội dung mượt mà.
+
+4. Micro-Interactions (Tương tác nhỏ):
+   - Khi di chuột (hover) vào nút bấm: Nút nên nhích nhẹ lên (`transform: translateY(-3px)`) và bóng đổ đậm hơn.
+
+IV. NGUYÊN TẮC BỐ CỤC (LAYOUT)
+------------------------------------------------------------
+- Di động là ưu tiên (Mobile-First): Luôn đảm bảo các cột (Grid) tự động xếp chồng (Stacked) trên màn hình nhỏ.
+- CTA rõ ràng: Các nút kêu gọi hành động cần có bóng đổ (Shadow) mạnh và màu tương phản (Đỏ/Vàng) để người dùng không cần tìm kiếm.
+
+---
+Tài liệu này giúp Civilis duy trì hình ảnh nhất quán, uy tín trong mắt học viên trên mọi nền tảng số. 🚀
